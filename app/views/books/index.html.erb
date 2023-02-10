@@ -1,17 +1,14 @@
 <!--index-->
 <h1>Books</h1>
 
-<table>
+<div class="index_table">
 
-  <thead>
-    <th>title</th>
-    <th>body</th>
-    <th colspan="3"></th>
-  </thead>
+  <div class="title_table">
+    <p class="title">title</p>
+    <p class="body">body</p>
+  </div>
 
-</table>
-
-<tbody>
+  <div class="body_table">
     <% @books.each do |book| %>
 
       <span><%= book.title %></span>
@@ -26,11 +23,23 @@
       <br>
 
     <% end %>
-  </tbody>
+  </div>
+
+</div>
 
 
 <!--new-->
 <h2>New book</h2>
+
+<!--エラー-->
+<!--<% if @book.errors.any? %>-->
+<!--  <%= @book.errors.count %>件のエラーが発生しました-->
+<!--  <ul>-->
+<!--    <% @book.errors.full_mmessages.each do |message| %>-->
+<!--      <li><%= message %></li>-->
+<!--    <% end %>-->
+<!--  </ul>-->
+<!--<% end %>-->
 
 <%= form_with model: @book,url: '/books',method: :post do |f| %>
 
