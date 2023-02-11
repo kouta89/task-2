@@ -67,8 +67,49 @@ td{
   margin-bottom:10px;
 }
 
+/*エラー*/
+.error_message{
+  margin:0 0 20px 0;
+  border:2px solid red;
+  width:464px;
+}
+
+.error_message h2{
+  color:#FFF;
+  background-color:#C00;
+  padding:5px 5px 5px 15px;
+  margin:0;
+  font-size:12px;
+}
+
+.error_message ul{
+  background-color:#F0F0F0;
+  margin:0;
+  padding:33px;
+}
+
+.error_message li{
+  margin-left:33px;
+}
+
+.error_field{
+  padding-bottom:10px;
+}
+
+.error_field .book,.book_input{
+  padding:2px;
+  display:table;
+  background-color:red;
+}
+
 /*show*/
 .show{
+  margin-left:33px;
+  margin-bottom:33px;
+}
+
+.flash{
+  color:#008000;
   margin-left:33px;
   margin-bottom:33px;
 }
