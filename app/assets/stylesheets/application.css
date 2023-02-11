@@ -89,17 +89,16 @@ td{
 }
 
 .error_message li{
-  margin-left:33px;
-}
-
-.error_field{
-  padding-bottom:10px;
+  margin-left:40px;
 }
 
 .error_field .book,.book_input{
   padding:2px;
   display:table;
   background-color:red;
+}
+.error_field .book_input{
+  margin-bottom:10px;
 }
 
 /*show*/
