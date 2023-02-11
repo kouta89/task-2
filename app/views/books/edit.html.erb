@@ -3,20 +3,25 @@
 <%= form_with model: @book, url: update_book_path(@book.id), method: :patch do |f| %>
 
   <div class="field">
-    <label for="book_title">Title</label>
+    <span class="book">Title</span>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <label for="book_body">Title</label>
+    <span class="book">Body</span>
     <%= f.text_area :body %>
   </div>
 
-  <%= f.submit 'Update Book' %>
+  <div class="actions">
+    <%= f.submit 'Update Book' %>
+  </div>
 
 <% end %>
 
 <!--showへ-->
 <%= link_to "Show", show_book_path(@book.id) %>
+
+<th> | </th>
+
 <!--indexへ-->
 <%= link_to "Back", "/books" %>

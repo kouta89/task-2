@@ -14,8 +14,7 @@
  *= require_self
  */
 *{
-  padding:0;
-  margin:0;
+
   box-sizing:border-box;
 }
 
@@ -42,16 +41,35 @@ body {
 }
 
 /*index*/
-.title_table{
-  display:flex;
+td{
+  padding:0 5px 8px 5px;
 }
 
-.title{
-  width:114px;
+.title_width {
+  width:192px;
   text-align:center;
 }
 
-.body{
+.body_width {
   width:400px;
   text-align:center;
 }
+
+.field{
+  padding-bottom:10px;
+}
+
+.book{
+  display:block;
+}
+
+.actions{
+  margin-bottom:10px;
+}
+
+/*show*/
+.show{
+  margin-left:33px;
+  margin-bottom:33px;
+}
+
