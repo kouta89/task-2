@@ -17,7 +17,7 @@
         <td><%= book.body %></td>
 
         <!--showへ-->
-        <td><%= link_to "Show",show_book_path(book.id) %></td>
+        <td><%= link_to "Show",book_path(book.id) %></td>
         <!--editへ-->
         <td><%= link_to "Edit", edit_book_path(book.id) %></td>
         <!--destroyへ-->
@@ -28,7 +28,6 @@
   </tbody>
 
 </table>
-
 
 <!--new-->
 <h2>New book</h2>
@@ -74,6 +73,6 @@
 
   <% end %>
 
-  <%= f.submit 'Create Book'%>
+  <%= f.submit 'Create Book' %>
 
 <% end %>
